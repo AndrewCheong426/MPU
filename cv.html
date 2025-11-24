@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CV – Cheong Io Hang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root {
+            --bg-color: #f7f7fa;
+            --card-bg: #ffffff;
+            --accent: #264653;
+            --accent-light: #2a9d8f;
+            --text-main: #1b1b1f;
+            --text-muted: #666a73;
+            --border-color: #e0e3eb;
+            --tag-bg: #e9f5f3;
+            --tag-text: #165a52;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                sans-serif;
+            background: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .page {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 16px;
+        }
+
+        @media (min-width: 768px) {
+            .page {
+                padding: 32px 24px 48px;
+            }
+        }
+
+        header {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px 24px;
+            align-items: center;
+            border: 1px solid var(--border-color);
+        }
+
+        @media (min-width: 600px) {
+            header {
+                padding: 24px 28px;
+            }
+        }
+
+        header .name {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        header .info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        header .info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            padding: 2px 8px;
+            border-radius: 999px;
+            background: var(--tag-bg);
+            color: var(--tag-text);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        section {
+            background: var(--card-bg);
+            border-radius: 14px;
+            border: 1px solid var(--border-color);
+            padding: 16px 14px;
+        }
+
+        @media (min-width: 600px) {
+            section {
+                padding: 18px 18px 20px;
+            }
+        }
+
+        section h2 {
+            margin: 0 0 10px;
+            font-size: 1.15rem;
+            color: var(--accent);
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        section h2 span.zh-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .item-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+
+        .item {
+            border-left: 3px solid #dde3f0;
+            padding-left: 10px;
+        }
+
+        .item-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 4px 10px;
+            font-weight: 600;
+        }
+
+        .item-title {
+            color: var(--text-main);
+        }
+
+        .item-org {
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .item-date {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .item-body {
+            margin-top: 3px;
+            color: var(--text-main);
+        }
+
+        .item-body ul {
+            margin: 4px 0 0 18px;
+            padding: 0;
+        }
+
+        .sub-list {
+            margin-top: 5px;
+        }
+
+        .sub-list li {
+            margin-bottom: 2px;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 1px 7px;
+            border-radius: 999px;
+            background: #edf2ff;
+            color: #364fc7;
+            font-size: 0.8rem;
+        }
+
+        /* Small details */
+        a {
+            color: var(--accent-light);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .note {
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <header>
+        <div>
+            <div class="name">Cheong Io Hang</div>
+            <div class="tag">Andrew</div>
+        </div>
+        <div class="info">
+            <span><strong>Date of Birth:</strong> 26 April 2007</span>
+            <span><strong>Email:</strong> <a href="mailto:andrew.cheong26@hotmail.com">andrew.cheong26@hotmail.com</a></span>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>
+                Extracurricular Society Experience
+            </h2>
+            <div class="item-group">
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Legal Affairs Bureau – Law Promotion Power</span>
+                        <span class="item-date">2022 – Present</span>
+                    </div>
+                    <div class="item-body">
+                        <p>Participant in law‑promotion youth programme, assisting in basic legal education and public awareness activities.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Macao Cultural Heritage Ambassador Association – Intern Cultural Heritage Ambassador</span>
+                        <span class="item-date">2023 – Present</span>
+                    </div>
+                    <div class="item-body">
+                        <p>Supporting guided tours and outreach activities to promote Macao’s cultural heritage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>
+                Competition Experience
+            </h2>
+            <div class="item-group">
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Hong Kong–Macao Youth Network Skills Competition – Gold Award</span>
+                        <span class="item-date">2024</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Macao Informatics Olympiad – Competition Group, Silver Award</span>
+                        <span class="item-date">Academic Year 2024</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Macao Inter‑School IT Knowledge Quiz Competition – Final Round Team, Merit Award</span>
+                        <span class="item-date">2023</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Huawei ICT Competition 2023–2024, Macao SAR – Third Prize</span>
+                        <span class="item-date">2023 – 2024</span>
+                    </div>
+                    <div class="item-body">
+                        <span class="note">(Secondary School Network Track)</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Beginner CTF Hackathon 2023</span>
+                    </div>
+                    <div class="item-body">
+                        <p>Participant</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">11<sup>th</sup> HIPPO English Language Olympiad</span>
+                        <span class="item-date">2023</span>
+                    </div>
+                    <div class="item-body">
+                        <ul class="sub-list">
+                            <li>Reading: 13.00</li>
+                            <li>Use of English: 7.5</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">11<sup>th</sup> International Willkommen Foreign Language Competition – Bronze Award</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Intelligence Quotient Olympiad of FISO 2023 – Merit</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">“Infinite Fun with Cultural Heritage” Carnival 2024 – Booth Game Design Competition</span>
+                        <span class="item-date">2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>
+                Extracurricular Courses & Training
+            </h2>
+            <div class="item-group">
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Macao Cultural Heritage Ambassador Training Programme</span>
+                        <span class="item-date">2023</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">“Historic Townscape Conservation and Planning” Youth Training</span>
+                        <span class="item-date">2024</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Macao Inter‑School STEM & IoT Creative Problem‑Solving Competition – Pre‑Competition Training Course (Senior Secondary Group)</span>
+                        <span class="item-date">2023</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Hong Kong–Macao Youth Network Skills Competition – Pre‑Competition Intensive Course</span>
+                        <span class="item-date">2024</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Beginner CTF Hackathon 2023 – Training</span>
+                        <span class="item-date">2023</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">General English Course (Secondary 3–4, IELTS‑oriented)</span>
+                        <span class="item-date">2022 – 2023</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>
+                Extracurricular Activities
+            </h2>
+            <div class="item-group">
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Palo Alto Networks Capture‑the‑Flag (CTF) Experience</span>
+                        <span class="item-date">January 2024</span>
+                    </div>
+                    <div class="item-body">
+                        <p>Hands‑on cybersecurity challenge activity.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Surveyor – “So That’s How It Is!” Youth Integrity Promotion Activity</span>
+                        <span class="item-date">May 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>
+                Skills & Certifications
+            </h2>
+            <div class="item-group">
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Microsoft Office Specialist – PowerPoint (Office 2016)</span>
+                    </div>
+                    <div class="item-body">
+                        <span class="pill">Productivity</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>
+                Study Tours & Exchange Programmes
+            </h2>
+            <div class="item-group">
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Bucksmore Young Professionals Course in Law</span>
+                        <span class="item-date">18 July 2023 – 31 July 2023</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Hong Kong–Macao–Mainland Youth Legal Exchange Week</span>
+                        <span class="item-date">7 July 2024 – 13 July 2024</span>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Grosvenor Hall English Language Programme with UKLC</span>
+                        <span class="item-date">27 July 2024 – 12 August 2024</span>
+                    </div>
+                    <div class="item-body">
+                        <p>English Language Programme with UKLC – <strong>CEFR Level C2</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>
+                Personal Interests
+            </h2>
+            <div class="item-group">
+                <div class="item">
+                    <div class="item-body">
+                        <p>
+                            Reading news related to science and technology in order to
+                            understand social development trends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
